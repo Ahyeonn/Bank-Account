@@ -10,7 +10,7 @@ class BankAccount:
     
     def withdraw(self, amount):
         self.balance -= amount
-        if amount > self.balance:
+        if self.balance < 0:
             print("Insufficient funds!!!")
             print("Overdraft fee of $10 will be applied to your account.\n")
             self.balance -= 10
