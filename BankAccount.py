@@ -38,4 +38,10 @@ class BankAccount:
         print(f'Account No. :{self.print_hidden_acc()}')
         self.get_balance()
 
-
+mitchell_acc = BankAccount("Mitchell", "3141592")
+mitchell_acc.deposit(400000)
+mitchell_acc.print_statement()
+mitchell_acc.add_interest()
+mitchell_acc.print_statement()
+mitchell_acc.withdraw(150)
+mitchell_acc.print_statement()
